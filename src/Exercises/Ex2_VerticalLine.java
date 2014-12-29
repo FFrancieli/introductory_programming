@@ -2,7 +2,7 @@ package Exercises;
 
 /**
  * Created by Francieli on 29/12/2014.
-*/
+ */
 public class Ex2_VerticalLine {
     public static void main(String[] args) {
         printVerticalLine(8, "*");
