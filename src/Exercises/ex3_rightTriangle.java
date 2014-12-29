@@ -11,12 +11,12 @@ public class ex3_rightTriangle {
         }
     }
 
-private static String horizontalLine( int numberOfSymbols, String symbol){
+    private static String horizontalLine( int numberOfSymbols, String symbol){
         String str = "";
         for (int i = 0; i < numberOfSymbols; i++ ){
-        str += symbol;
+            str += symbol;
         }
 
         return  str;
-        }
+    }
 }
