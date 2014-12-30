@@ -6,6 +6,10 @@ package Exercises;
 public class ex4_IsoscelesTriangle {
 
     public static void main(String[] args) {
+        int n = 5;
+        for (int i = 1; i < 2*n; i +=2){
+            System.out.println(drawTriangleLine(2*n,i));
+        }
 
     }
 
@@ -13,22 +17,25 @@ public class ex4_IsoscelesTriangle {
         return numberOfSymbols/2;
     }
 
-    private static String insertWhiteSpace(int numberOfWhiteSpaces, String strSymbols) {
+    private static String insertWhiteSpace(int numberOfWhiteSpaces) {
         String str = "";
         for (int i = 0; i < numberOfWhiteSpaces; i++) {
-            str = " " + strSymbols;
+            str = " " + str;
         }
-    return str;
-}
 
-    private static void drawTriangle(int numberOfSymbols){
-        int numberOfWhiteSpaces = 0;
-        String lineTriangle = "";
-
-        for (int i = 1; i <= numberOfSymbols; i++){
-            numberOfWhiteSpaces = getNumberOfWhiteSpaces( numberOfSymbols - i);
-            lineTriangle = insertWhiteSpace(numberOfWhiteSpaces);
-            lineTriangle +=
-        }
+        return str;
     }
+
+    private static String drawTriangleLine(int numberOfSymbols, int numberOfSymbolsInLine) {
+        int numberOfWhiteSpaces = 0;
+        numberOfWhiteSpaces = getNumberOfWhiteSpaces( numberOfSymbols - numberOfSymbolsInLine);
+        String str = insertWhiteSpace(numberOfWhiteSpaces);
+
+        for (int i = 0; i < numberOfSymbolsInLine; i++ ){
+            str += "*";
+        }
+
+        return str;
+    }
+
 }
