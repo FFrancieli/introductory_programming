@@ -19,9 +19,7 @@ public class Ex6_DiamondName {
         String str = "";
 
         for (int i = 1; i <= n; i++) {
-
             str += insertWhiteSpace(numberOfSpaces);
-
             for (int j = 0; j < numberOfSymbols; j++) {
                 if (numberOfSymbols == 2*n-1){
                     str = "Francieli ";
@@ -29,14 +27,11 @@ public class Ex6_DiamondName {
                     str += "*";
                 }
             }
-
             numberOfSymbols += 2;
             numberOfSpaces--;
-
             System.out.println(str);
             str = "";
         }
-
     }
 
     private static void drawTriangleDown(int n){
@@ -45,16 +40,12 @@ public class Ex6_DiamondName {
         String str = "";
 
         for (int i = 1; i <= n; i++){
-
             str += insertWhiteSpace(numberOfSpaces);
-
             for (int j = 0; j < numberOfSymbols; j++){
                 str += "*";
             }
-
             numberOfSymbols -= 2;
             numberOfSpaces ++;
-
             System.out.println(str);
             str = "";
         }
