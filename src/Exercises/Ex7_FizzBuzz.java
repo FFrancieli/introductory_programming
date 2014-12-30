@@ -10,19 +10,18 @@ public class Ex7_FizzBuzz {
     }
 
     private static boolean isDivisibleByFive(int x){
-        boolean resp = false;
+
         if (x % 5 ==0){
-            resp = true;
+            return true;
         }
-        return  resp;
+        return false;
     }
 
     private static boolean isDivisibleByThree(int x){
-        boolean resp = false;
-          if (x % 3 ==0){
-        resp = true;
-    }
-    return  resp;
+        if (x % 3 ==0){
+            return true;
+        }
+        return false;
 }
 
     private static void FizzBuzz(){
